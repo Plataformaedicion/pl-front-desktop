@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self' https://images.unsplash.com;">
+  <title>POST PRO</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Bienvenido</h1>
+      <p>Por favor ingrese sus credenciales para continuar</p>
+      <form id="login-form">
+        <input type="text" id="username" name="username" placeholder="Email">
+        <input type="password" id="password" name="password" placeholder="Password">
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+    </div>
+    <div class="right">
+    </div>
+  </div>
+
+  <div id="footer-div">
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>.
+  </div>
+
+  <script src="./renderer.js"></script>
+</body>
+</html>

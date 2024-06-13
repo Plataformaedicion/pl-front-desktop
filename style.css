@@ -1,0 +1,92 @@
+/* styles.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left, .right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos dentro de left se coloquen en columna */
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: center; /* Centra el contenido verticalmente */
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.right {
+  background-color: #e9ecef;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1579109652910-99b9be06aaec?q=80&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover; /* Ajusta el tamaño del fondo para cubrir completamente el contenedor */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita la repetición del fondo */
+}
+
+
+.right img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ajusta la imagen manteniendo la relación de aspecto */
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  max-width: 400px; /* Limita el ancho máximo */
+}
+
+input,
+button {
+  margin-bottom: 10px; /* Espacio entre elementos */
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  box-sizing: border-box; /* Incluye padding y border dentro del ancho total */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#footer-div {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query to hide the right section on small screens */
+@media (max-width: 768px) {
+  .right {
+    display: none;
+  }
+}
